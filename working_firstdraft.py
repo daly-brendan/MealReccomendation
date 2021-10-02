@@ -24,19 +24,73 @@ user_input = input("What are you feeling tonight?(Something hearty, light, fun &
 # build loops that choose the food based off of input
 
 if user_input == "hearty":
-    print("The program chose this as your meal:", (random.choice(hearty_meals)))
-    print("The program chose this as your wine pairing: ". random.choice(acidic_white_wines))
+    #food
+    print("The program chose this as your meal:", )
+    hearty_random = random.choice(hearty_meals)
+    print(hearty_random)
+    print("Google searches for your meal below: ")
+    query = hearty_random
+    for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
+        print(i)
+    print(" ") #breathing room
+    #wine
+    print("The program chose this as your wine pairing: ",)
+    hearty_wine = random.choice(acidic_white_wines)
+    print(hearty_wine)
+    print("Google searches for your wine pairing below: ")
+    query = hearty_wine
+    for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
+        print(i)
     
 if user_input == "light":
-    print("The program chose this as your meal:", (random.choice(light_meals)))
-    print("The program chose this as your wine pairing: ", random.choice(fruity_oaky_white_wines))
+    #food
+    print("The program chose this as your meal:", )
+    light_random = random.choice(light_meals)
+    print (light_random)
+    print ("Google searches for your meal below: ")
+    query = light_random
+    for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
+        print (i)
+    print(" ") #breathing room
+    #wine
+    print("The program chose this as your wine pairing: ",)
+    light_wine = random.choice(fruity_oaky_white_wines)
+    print(light_wine)
+    print("Google searches for your wine pairing below: ")
+    query = light_wine
+    for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
+        print(i)
 
 if user_input == "classic":
-    print("The program chose this as your meal: ", (random.choice(classic_meals)))
-    print("The program chose this as your wine pairing: ", random.choice(bold_red_wines))
+    #food
+    print("The program chose this as your meal: ", )
+    classic_random = random.choice(classic_meals)
+    print (classic_random)
+    print("Google searches for your meal below:")
+    query = classic_random
+    for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
+        print (i)
+    print(" ") #breathing room
+    #wine
+    print("The program chose this as your wine pairing: ", )
+    classic_wine = random.choice(bold_red_wines)
+    print(classic_wine)
+    print("Google searches for your wine pairing below: ")
+    query = classic_wine
+    for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
+        print(i)
 
 if user_input == "fun":
-    print("The program chose this as your meal: ", random.choice(fun_meals))
+    #food
+    print("The program chose this as your meal: ")
+    fun_food = random.choice(fun_meals)
+    print(fun_food)
+    print("Google searches for your meal below:")
+    query = fun_food
+    for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
+        print(i)
+    print(" ") #breathing room
+    #wine
     print("The program chose this as your wine pairing: ") 
     fun_wine = random.choice(light_red_wines)
     print(fun_wine)
