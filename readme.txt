@@ -18,5 +18,8 @@ Light_meals = 0, 9, 10
 fun_meals = 4, 5, 6, 8, 9
 classic_meals = 1, 3, 7, 11, 12
 
+using the google module, i was able to do google searches for all of the meals and their respective wine pairings
+
+
 #####
 Anything under here will act as a works cited incase I need to use any kind of skeleton code

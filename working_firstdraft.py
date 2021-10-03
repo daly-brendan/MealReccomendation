@@ -18,7 +18,7 @@ fruity_oaky_white_wines = itemgetter(16, 13, 11, 10, 8, 14, 7)(wines)
 #itemgetter grabs specific items from a list to create a new string type var, that acts as list?
 
 
-user_input = input("What are you feeling tonight?(Something hearty, light, fun & new, or a classic) ")
+user_input = input("What are you feeling tonight?(Something hearty, light, fun, or a classic) ")
 
 # options for input are: hearty, light, fun & new, or classic
 # build loops that choose the food based off of input
@@ -33,6 +33,7 @@ if user_input == "hearty":
     for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
         print(i)
     print(" ") #breathing room
+    
     #wine
     print("The program chose this as your wine pairing: ",)
     hearty_wine = random.choice(acidic_white_wines)
@@ -52,6 +53,7 @@ if user_input == "light":
     for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
         print (i)
     print(" ") #breathing room
+    
     #wine
     print("The program chose this as your wine pairing: ",)
     light_wine = random.choice(fruity_oaky_white_wines)
@@ -71,6 +73,7 @@ if user_input == "classic":
     for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
         print (i)
     print(" ") #breathing room
+    
     #wine
     print("The program chose this as your wine pairing: ", )
     classic_wine = random.choice(bold_red_wines)
@@ -90,6 +93,7 @@ if user_input == "fun":
     for i in search(query, tld = "co.in", num = 10, stop = 2, pause = 2):
         print(i)
     print(" ") #breathing room
+    
     #wine
     print("The program chose this as your wine pairing: ") 
     fun_wine = random.choice(light_red_wines)
